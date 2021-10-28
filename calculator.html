@@ -1,0 +1,145 @@
+<link rel="stylesheet" href="calculator.css">
+<div class="calculator_container">
+    <div class="calculator__header">
+        <label class="calculator_header-btn" onclick="calculatorValueChange(this, 4)" value="1">1 год</label>
+        <label class="calculator_header-btn" onclick="calculatorValueChange(this, 4)" value="2">2 года</label>
+        <label class="calculator_header-btn" onclick="calculatorValueChange(this, 4)" value="3">3 года</label>
+    </div>
+    <div class="calculator__body">
+        <div class="calculator_body__col">
+            <div class="calculator__item">
+                <div class="calculator_item-header">
+                    <p class="calculator_item-header__title">Процентная ставка</p>
+                    <p class="calculator_item-header__value calculator_header-procent">14%</p>
+                </div>
+                <div class="calculator_item-body">
+                    <input type="range" min="1" max="3" step="1" value="2" class="calculator_item-value calculator-procent" oninput="calculatorInputRange(this, 1); calculatorValueChange(this, 1);">
+                    <input type="hidden" value="14" name="calculator-procent">
+                    <div class="calculator_item-labels">
+                        <label>12%</label>
+                        <label>14%</label>
+                        <label>16%</label>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator__item">
+                <div class="calculator_item-header">
+                    <p class="calculator_item-header__title">Процентная ставка</p>
+                    <p class="calculator_item-header__value calculator_header-firstPay">5 500 000р</p>
+                </div>
+                <div class="calculator_item-body">
+                    <input type="range" min="1000000" max="10000000" value="5500000" step="100000" class="calculator_item-value calculator-firstPay" oninput="calculatorInputRange(this, 2); calculatorValueChange(this, 2);">
+                    <input type="hidden" value="5500000" name="calculator-firstPay">
+                    <div class="calculator_item-labels">
+                        <label>1 млн</label>
+                        <label>5 млн</label>
+                        <label>10 млн</label>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator__item">
+                <div class="calculator_item-header">
+                    <p class="calculator_item-header__title">Процентная ставка</p>
+                    <p class="calculator_item-header__value calculator_header-years">2 года</p>
+                </div>
+                <div class="calculator_item-body">
+                    <input type="range" min="1" max="3" step="1" class="calculator_item-value calculator-years" onchange="" oninput="calculatorInputRange(this, 3); calculatorValueChange(this, 3);">
+                    <input type="hidden" name="calculator-years" value="2">
+                    <div class="calculator_item-labels">
+                        <label>1 год</label>
+                        <label>2 года</label>
+                        <label>3 года</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calculator_body__col">
+            <div class="calculator_col-header">
+                <h3>Наше предложение</h3>
+                <h4>Итоговый доход</h4>
+            </div>
+            <div class="calculator_col-resultSumn">
+                <button class="calculator-minus" onclick="calculatorFirstPaySettings('minus')">-</button>
+                <h3 class="calculator-resultSumn">
+                    <span class="calculatorDisplayResult">6 270 000</span> 
+                    <svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="510.127px" height="510.127px" viewBox="0 0 510.127 510.127" style="enable-background:new 0 0 510.127 510.127;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M34.786,428.963h81.158v69.572c0,3.385,1.083,6.156,3.262,8.322c2.173,2.18,4.951,3.27,8.335,3.27h60.502    c3.14,0,5.857-1.09,8.152-3.27c2.295-2.166,3.439-4.938,3.439-8.322v-69.572h182.964c3.377,0,6.156-1.076,8.334-3.256    c2.18-2.178,3.262-4.951,3.262-8.336v-46.377c0-3.365-1.082-6.156-3.262-8.322c-2.172-2.18-4.957-3.27-8.334-3.27H199.628v-42.754    h123.184c48.305,0,87.73-14.719,118.293-44.199c30.551-29.449,45.834-67.49,45.834-114.125c0-46.604-15.283-84.646-45.834-114.125    C410.548,14.749,371.116,0,322.812,0H127.535c-3.385,0-6.157,1.089-8.335,3.256c-2.173,2.179-3.262,4.969-3.262,8.335v227.896    H34.786c-3.384,0-6.157,1.145-8.335,3.439c-2.172,2.295-3.262,5.012-3.262,8.151v53.978c0,3.385,1.083,6.158,3.262,8.336    c2.179,2.18,4.945,3.256,8.335,3.256h81.158v42.754H34.786c-3.384,0-6.157,1.09-8.335,3.27c-2.172,2.166-3.262,4.951-3.262,8.322    v46.377c0,3.385,1.083,6.158,3.262,8.336C28.629,427.887,31.401,428.963,34.786,428.963z M199.628,77.179h115.938    c25.6,0,46.248,7.485,61.953,22.46c15.697,14.976,23.549,34.547,23.549,58.691c0,24.156-7.852,43.733-23.549,58.691    c-15.705,14.988-36.354,22.473-61.953,22.473H199.628V77.179z"/>
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                    </h3>
+                <button class="calculator-plus" onclick="calculatorFirstPaySettings('plus');">+</button>
+            </div>
+            <div class="calculator_col-invest_sumn">
+                <div class="calculator__invest_sumn-procent">
+                    <h4>Ставка</h4>
+                    <h3>14 %</h3>
+                </div>
+                <div class="calculator__invest_sumn-cash">
+                    <h4>Сумма инвестиций</h4>
+                    <h3>5 500 000 Р</h3>
+                </div>
+                <div class="calculator__invest_sumn-bigProcent">
+                    <h2>14 %</h2>
+                </div>
+            </div>
+            <div class="calculator_col-buttons">
+                <button>
+                    <a href="https://youtube.com">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20px" height="21px">
+                            <image  x="0px" y="0px" width="20px" height="21px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAMAAABxCz6aAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAk1BMVEX////JycpVVVVLS0xNTU1qamqkpKUAAACgoKGioqOAgYEFBQUGBgYLCwpZWlplZWY2NjZjY2QzMzM0NDR4eHlbXFxaWlpkZGTMzc5iYmM1NTUBAQGjo6RkZGWenp8yMjKZmZqbm5xWVlchISG8vb3S09TGx8cAAAAEBAQFBQUHBwcDAwMICAgCAgIGBgYBAQH///+8aW4gAAAAJ3RSTlMADYePj3Iz3zc1WdvZ1YN2pnirqWGBg3gIeKnfNXY5qz89hb4ZAg+lfpTyAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+UJCgApOmq65N0AAACJSURBVBjTtc/XDsIwDAXQy0zZ0LLK3nHipP3/vyMooJaEV+6L5SPbkgGfRrPV7iBIV0opQkx+Ye+P2B8MR+MQJ6T0NMQZk0kjtEpnmC+Wq3WFOWuzwdZ1uwr3TEUG4brDFxqPSf0mx5jbz3p9sqQijZHVMVovrUdxAs7C40VauuLm8nrpXe+uPJ6S3xjeGgh5nwAAAABJRU5ErkJggg==" />
+                        </svg>
+                        Гарантия Фонда
+                    </a>
+                </button>
+                <button>
+                    <a href="https://youtube.com">
+                        Заполнить заявку
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="calculator__body">
+        <div class="calculator_body__col"></div>
+        <div class="calculator_body__col calculator__last-content">
+            <p>Не является публичной афертой</p>
+        </div>
+    </div>
+</div>
+<script src="calculator.js"></script>
